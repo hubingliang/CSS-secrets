@@ -223,7 +223,7 @@ body .box .box-fourteen {
   background: yellowgreen;
   background-image: linear-gradient(to right, transparent 50%, #655 0);
 }
-@keyframes spin {
+@keyframes sp {
   to {
     transform: rotate(0.5turn);
   }
@@ -238,10 +238,10 @@ body .box .box-fourteen::before {
   display: block;
   margin-left: 50%;
   height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
   background-color: inherit;
   transform-origin: left;
-  border-radius: 0 100% 100% 0 / 50%;
-  animation: spin 3s linear infinite, bg 6s step-end infinite;
+  animation: sp 3s linear infinite, bg 6s step-end infinite;
 }
 body .box .box-fourteen-b {
   width: 100px;
@@ -258,7 +258,7 @@ body .box .box-fourteen-b::before {
   background-color: inherit;
   transform-origin: left;
   border-radius: 0 100% 100% 0 / 50%;
-  animation: spin 3s linear infinite, bg 6s step-end infinite;
+  animation: sp 3s linear infinite, bg 6s step-end infinite;
   animation-play-state: paused;
   animation-delay: -1s;
 }
